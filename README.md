@@ -1,4 +1,4 @@
-\# 🚀 Bill's LoRA Detail Captioner (Gemma 4 Edition)
+\# 🚀 BILL-Concept_Isolator-Captioner (Gemma 4 Edition)
 
 
 
@@ -60,7 +60,7 @@ To train a high-quality LoRA, you must isolate the subject's unique identity fro
 
 &#x20;    ```bash
 
-&#x20;    git clone https://github.com/YOUR\_USERNAME/ComfyUI-BillLoRA-Captioner.git
+&#x20;    git clone https://github.com/YOUR\_USERNAME/ComfyUI-BILL-Concept_Isolator-Captioner.git
 
 &#x20;    ```
 
