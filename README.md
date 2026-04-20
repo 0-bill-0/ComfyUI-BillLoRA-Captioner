@@ -14,7 +14,7 @@ To ensure maximum subject fidelity, the node employs a logic gate known as **Con
 ## System Capabilities
 *   **High-Fidelity Descriptive Analysis:** Focuses on lighting, composition, and texture rather than simple object labeling.
 *   **Single-Pass Inference:** Reduces token drift by utilizing a single, complex prompt pass rather than iterative refinement.
-*   **Integrated File Management:** Streamlined `.txt` export mapped to image filenames for immediate use in training scripts (e.g., Kohya_ss).
+*   **Integrated File Management:** Streamlined `.txt` export mapped to image filenames for immediate use in training scripts (e.g., AI Toolkit).
 *   **Hardware Target:** Optimized for high-VRAM environments (24GB+), enabling the use of larger, more reasoned models.
 
 ## Installation Guide
