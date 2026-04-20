@@ -1,7 +1,7 @@
-# Bill's LoRA Detail Captioner (Gemma 4 Edition)
+# BILL-Concept_Isolator-Captioner
 
 ## Overview
-The **Bill's LoRA Detail Captioner** is a specialized ComfyUI node designed to automate the creation of high-precision captioning datasets. By integrating multimodal LLMs—specifically the Gemma 4 architecture—it bridges the gap between raw image data and the descriptive metadata required for high-quality LoRA (Low-Rank Adaptation) training.
+The **BILL-Concept_Isolator-Captioner** is a specialized ComfyUI node designed to automate the creation of high-precision captioning datasets. By integrating multimodal LLMs—specifically the Gemma 4 architecture—it bridges the gap between raw image data and the descriptive metadata required for high-quality LoRA (Low-Rank Adaptation) training.
 
 ## Technical Approach: Concept Isolation
 To ensure maximum subject fidelity, the node employs a logic gate known as **Concept Isolation**. This process prevents the model from overfitting by decoupling the subject's unique identifiers from the general scene description.
@@ -26,7 +26,7 @@ To ensure maximum subject fidelity, the node employs a logic gate known as **Con
 
 ### Node Integration
 1. Clone the repository to the ComfyUI custom nodes directory:
-   `git clone https://github.com/YOUR_USERNAME/ComfyUI-BillLoRA-Captioner.git`
+   `git clone https://github.com/YOUR_USERNAME/ComfyUI-BILL-Concept_Isolator-Captioner.git`
 2. Install required Python dependencies:
    `pip install -r requirements.txt`
 
