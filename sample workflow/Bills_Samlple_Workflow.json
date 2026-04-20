@@ -1,7 +1,7 @@
 {
   "id": "7a3bf371-b909-4a67-a770-80b53cad1961",
   "revision": 0,
-  "last_node_id": 6,
+  "last_node_id": 4,
   "last_link_id": 4,
   "nodes": [
     {
@@ -22,7 +22,7 @@
         {
           "name": "source",
           "type": "*",
-          "link": 1
+          "link": 4
         }
       ],
       "outputs": [
@@ -47,15 +47,15 @@
       ]
     },
     {
-      "id": 4,
-      "type": "LoadImageWithFilename",
+      "id": 2,
+      "type": "LoadImage",
       "pos": [
-        -996.0806032291703,
-        308.89034772431614
+        -1010.1963798705357,
+        380.0686689554376
       ],
       "size": [
-        275.03671875,
-        334.0000000000001
+        282.798828125,
+        314
       ],
       "flags": {},
       "order": 0,
@@ -63,31 +63,28 @@
       "inputs": [],
       "outputs": [
         {
-          "name": "image",
+          "name": "IMAGE",
           "type": "IMAGE",
           "links": [
             3
           ]
         },
         {
-          "name": "mask",
+          "name": "MASK",
           "type": "MASK",
           "links": null
-        },
-        {
-          "name": "filename",
-          "type": "STRING",
-          "links": [
-            4
-          ]
         }
       ],
       "properties": {
+        "Node name for S&R": "LoadImage",
         "ue_properties": {
-          "widget_ue_connectable": {},
+          "widget_ue_connectable": {
+            "image": true,
+            "upload": true
+          },
+          "version": "7.8",
           "input_ue_unconnectable": {}
-        },
-        "Node name for S&R": "LoadImageWithFilename"
+        }
       },
       "widgets_values": [
         "z-image-turbo_00076_.png",
@@ -95,11 +92,11 @@
       ]
     },
     {
-      "id": 1,
+      "id": 4,
       "type": "BillLoRACaptionNode",
       "pos": [
-        -611.7864748342178,
-        317.135079431475
+        -592.1029881661269,
+        376.6243874392745
       ],
       "size": [
         400,
@@ -113,15 +110,6 @@
           "name": "image",
           "type": "IMAGE",
           "link": 3
-        },
-        {
-          "name": "filename",
-          "shape": 7,
-          "type": "STRING",
-          "widget": {
-            "name": "filename"
-          },
-          "link": 4
         }
       ],
       "outputs": [
@@ -129,23 +117,16 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            1
+            4
           ]
         }
       ],
       "properties": {
-        "Node name for S&R": "BillLoRACaptionNode",
         "ue_properties": {
-          "widget_ue_connectable": {
-            "model": true,
-            "excluded_details": true,
-            "trigger_word": true,
-            "filename": true,
-            "save_folder": true
-          },
-          "version": "7.8",
+          "widget_ue_connectable": {},
           "input_ue_unconnectable": {}
-        }
+        },
+        "Node name for S&R": "BillLoRACaptionNode"
       },
       "widgets_values": [
         "nexusriot/gemma-4-abliterated:31b",
@@ -158,27 +139,19 @@
   ],
   "links": [
     [
-      1,
-      1,
-      0,
       3,
+      2,
       0,
-      "STRING"
-    ],
-    [
-      3,
       4,
-      0,
-      1,
       0,
       "IMAGE"
     ],
     [
       4,
       4,
-      2,
-      1,
-      1,
+      0,
+      3,
+      0,
       "STRING"
     ]
   ],
@@ -186,10 +159,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7078387641574597,
+      "scale": 0.8564849046305256,
       "offset": [
-        2084.4075883095525,
-        501.57312003549123
+        1577.8499178831414,
+        192.8309088073309
       ]
     },
     "ue_links": [],
